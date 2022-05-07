@@ -17,6 +17,42 @@
 /*************************************************************************************  
   main section
 *************************************************************************************/
+/* Aviso */
+.aviso {
+  width: 100%;
+  overflow: hidden;
+}
+
+.aviso div {
+  width: 100rem;
+  display: flex;
+  animation: letrero 30s infinite linear;
+}
+
+@keyframes letrero {
+  from{margin-left: 125%;}
+  to{margin-left: -105rem;}
+}
+
+.aviso div p {
+  width: 45rem;
+  height: 2rem;
+  font-size: 1.75rem;
+  line-height: 2rem;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+.aviso div .vacio {
+  width: 10rem;
+}
+
+.aviso div p i {
+  margin-right: 0.5rem;
+  color: var(--decorado);
+}
+
 /* Secciones */
 .sectionWrapper {
   width: 100%;
