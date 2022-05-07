@@ -19,8 +19,11 @@
 *************************************************************************************/
 /* Aviso */
 .aviso {
+  background-color: #fff;
   width: 100%;
   overflow: hidden;
+  position: fixed;
+  z-index: 5;
 }
 
 .aviso div {
@@ -30,7 +33,7 @@
 }
 
 @keyframes letrero {
-  from{margin-left: 125%;}
+  from{margin-left: 105%;}
   to{margin-left: -105rem;}
 }
 
