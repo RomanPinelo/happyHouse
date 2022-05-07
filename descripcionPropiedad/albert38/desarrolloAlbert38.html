@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <link rel="shortcut icon" type="image/x-icon" href="../../img/favicon.ico">
+    <link rel="stylesheet" href="../../styles/normalize.css">
+    <link rel="stylesheet" href="../../styles/style.css">
+    <link rel="stylesheet" href="../../styles/infoCompletaDesarrollo.css">
+
+    <!-- Font Awesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ad44076349.js" crossorigin="anonymous"></script>
+
+    <title>Happy House</title>
+  </head>
+
+  <body>
+
+    <!-- Barra de menú -->
+    <header class="header" id="navbar">
+
+      <!-- Botón de menú en celular -->
+      <div class="button" id="buttonMenu">
+        <span class="button_bar Bar1" id="bar1"></span>
+        <span class="button_bar Bar2"></span>
+        <span class="button_bar Bar3" id="bar3"></span>
+      </div>
+
+      <div class="header__logo">
+        <img src="../../img/logoMenu.jpg" alt="Logo">
+        <svg id="happyHouse" width="935" height="135" viewBox="0 0 1075 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M97.2695 129H82.5039V71.5195H17.2891V129H2.52344V2.96484H17.2891V58.248H82.5039V2.96484H97.2695V129Z" stroke="black" stroke-width="4" mask="url(#path-1-outside-1_6_2)"/>
+          <path d="M192.807 129H178.393V114.938H178.041C171.771 125.719 162.543 131.109 150.355 131.109C141.391 131.109 134.359 128.736 129.262 123.99C124.223 119.244 121.703 112.945 121.703 105.094C121.703 88.2773 131.605 78.4922 151.41 75.7383L178.393 71.959C178.393 56.666 172.211 49.0195 159.848 49.0195C149.008 49.0195 139.223 52.7109 130.492 60.0938V45.3281C139.34 39.7031 149.535 36.8906 161.078 36.8906C182.23 36.8906 192.807 48.082 192.807 70.4648V129ZM178.393 83.4727L156.684 86.4609C150.004 87.3984 144.965 89.0684 141.566 91.4707C138.168 93.8145 136.469 98.0039 136.469 104.039C136.469 108.434 138.021 112.037 141.127 114.85C144.291 117.604 148.48 118.98 153.695 118.98C160.844 118.98 166.732 116.49 171.361 111.51C176.049 106.471 178.393 100.113 178.393 92.4375V83.4727Z" stroke="black" stroke-width="4" mask="url(#path-1-outside-1_6_2)"/>
+          <path d="M234.73 115.992H234.379V170.396H219.965V39H234.379V54.8203H234.73C241.82 42.8672 252.191 36.8906 265.844 36.8906C277.445 36.8906 286.498 40.9336 293.002 49.0195C299.506 57.0469 302.758 67.8281 302.758 81.3633C302.758 96.4219 299.096 108.492 291.771 117.574C284.447 126.598 274.428 131.109 261.713 131.109C250.053 131.109 241.059 126.07 234.73 115.992ZM234.379 79.6934V92.2617C234.379 99.7031 236.781 106.031 241.586 111.246C246.449 116.402 252.602 118.98 260.043 118.98C268.773 118.98 275.6 115.641 280.521 108.961C285.502 102.281 287.992 92.9941 287.992 81.0996C287.992 71.0801 285.678 63.2285 281.049 57.5449C276.42 51.8613 270.15 49.0195 262.24 49.0195C253.861 49.0195 247.123 51.9492 242.025 57.8086C236.928 63.6094 234.379 70.9043 234.379 79.6934Z" stroke="black" stroke-width="4" mask="url(#path-1-outside-1_6_2)"/>
+          <path d="M340.551 115.992H340.199V170.396H325.785V39H340.199V54.8203H340.551C347.641 42.8672 358.012 36.8906 371.664 36.8906C383.266 36.8906 392.318 40.9336 398.822 49.0195C405.326 57.0469 408.578 67.8281 408.578 81.3633C408.578 96.4219 404.916 108.492 397.592 117.574C390.268 126.598 380.248 131.109 367.533 131.109C355.873 131.109 346.879 126.07 340.551 115.992ZM340.199 79.6934V92.2617C340.199 99.7031 342.602 106.031 347.406 111.246C352.27 116.402 358.422 118.98 365.863 118.98C374.594 118.98 381.42 115.641 386.342 108.961C391.322 102.281 393.812 92.9941 393.812 81.0996C393.812 71.0801 391.498 63.2285 386.869 57.5449C382.24 51.8613 375.971 49.0195 368.061 49.0195C359.682 49.0195 352.943 51.9492 347.846 57.8086C342.748 63.6094 340.199 70.9043 340.199 79.6934Z" stroke="black" stroke-width="4" mask="url(#path-1-outside-1_6_2)"/>
+          <path d="M503.236 39L461.84 143.414C454.457 162.047 444.086 171.363 430.727 171.363C426.977 171.363 423.842 170.982 421.322 170.221V157.301C424.428 158.355 427.27 158.883 429.848 158.883C437.113 158.883 442.562 154.547 446.195 145.875L453.402 128.824L418.246 39H434.242L458.588 108.258C458.881 109.137 459.496 111.422 460.434 115.113H460.961C461.254 113.707 461.84 111.48 462.719 108.434L488.295 39H503.236Z" stroke="black" stroke-width="4" mask="url(#path-1-outside-1_6_2)"/>
+          <path d="M664.867 129H650.102V71.5195H584.887V129H570.121V2.96484H584.887V58.248H650.102V2.96484H664.867V129Z" stroke="black" stroke-width="4" mask="url(#path-1-outside-1_6_2)"/>
+          <path d="M733.598 131.109C720.297 131.109 709.662 126.92 701.693 118.541C693.783 110.104 689.828 98.9414 689.828 85.0547C689.828 69.9375 693.959 58.1309 702.221 49.6348C710.482 41.1387 721.645 36.8906 735.707 36.8906C749.125 36.8906 759.584 41.0215 767.084 49.2832C774.643 57.5449 778.422 69 778.422 83.6484C778.422 98.0039 774.35 109.518 766.205 118.189C758.119 126.803 747.25 131.109 733.598 131.109ZM734.652 49.0195C725.395 49.0195 718.07 52.1836 712.68 58.5117C707.289 64.7812 704.594 73.4531 704.594 84.5273C704.594 95.1914 707.318 103.6 712.768 109.752C718.217 115.904 725.512 118.98 734.652 118.98C743.969 118.98 751.117 115.963 756.098 109.928C761.137 103.893 763.656 95.3086 763.656 84.1758C763.656 72.9258 761.137 64.2539 756.098 58.1602C751.117 52.0664 743.969 49.0195 734.652 49.0195Z" stroke="black" stroke-width="4" mask="url(#path-1-outside-1_6_2)"/>
+          <path d="M874.223 129H859.809V114.762H859.457C853.48 125.66 844.223 131.109 831.684 131.109C810.238 131.109 799.516 118.336 799.516 92.7891V39H813.842V90.5039C813.842 109.488 821.107 118.98 835.639 118.98C842.67 118.98 848.441 116.402 852.953 111.246C857.523 106.031 859.809 99.2344 859.809 90.8555V39H874.223V129Z" stroke="black" stroke-width="4" mask="url(#path-1-outside-1_6_2)"/>
+          <path d="M897.953 125.748V110.279C905.805 116.08 914.447 118.98 923.881 118.98C936.537 118.98 942.865 114.762 942.865 106.324C942.865 103.922 942.309 101.9 941.195 100.26C940.141 98.5605 938.676 97.0664 936.801 95.7773C934.984 94.4883 932.816 93.3457 930.297 92.3496C927.836 91.2949 925.17 90.2109 922.299 89.0977C918.314 87.5156 914.799 85.9336 911.752 84.3516C908.764 82.7109 906.244 80.8945 904.193 78.9023C902.201 76.8516 900.678 74.5371 899.623 71.959C898.627 69.3809 898.129 66.3633 898.129 62.9062C898.129 58.6875 899.096 54.9668 901.029 51.7441C902.963 48.4629 905.541 45.7383 908.764 43.5703C911.986 41.3438 915.648 39.6738 919.75 38.5605C923.91 37.4473 928.188 36.8906 932.582 36.8906C940.375 36.8906 947.348 38.2383 953.5 40.9336V55.5234C946.879 51.1875 939.262 49.0195 930.648 49.0195C927.953 49.0195 925.521 49.3418 923.354 49.9863C921.186 50.5723 919.311 51.4219 917.729 52.5352C916.205 53.6484 915.004 54.9961 914.125 56.5781C913.305 58.1016 912.895 59.8008 912.895 61.6758C912.895 64.0195 913.305 65.9824 914.125 67.5645C915.004 69.1465 916.264 70.5527 917.904 71.7832C919.545 73.0137 921.537 74.127 923.881 75.123C926.225 76.1191 928.891 77.2031 931.879 78.375C935.863 79.8984 939.438 81.4805 942.602 83.1211C945.766 84.7031 948.461 86.5195 950.688 88.5703C952.914 90.5625 954.613 92.877 955.785 95.5137C957.016 98.1504 957.631 101.285 957.631 104.918C957.631 109.371 956.635 113.238 954.643 116.52C952.709 119.801 950.102 122.525 946.82 124.693C943.539 126.861 939.76 128.473 935.482 129.527C931.205 130.582 926.723 131.109 922.035 131.109C912.777 131.109 904.75 129.322 897.953 125.748Z" stroke="black" stroke-width="4" mask="url(#path-1-outside-1_6_2)"/>
+          <path d="M1052.2 87.6035H988.656C988.891 97.623 991.586 105.357 996.742 110.807C1001.9 116.256 1008.99 118.98 1018.01 118.98C1028.15 118.98 1037.46 115.641 1045.96 108.961V122.496C1038.05 128.238 1027.59 131.109 1014.58 131.109C1001.87 131.109 991.879 127.037 984.613 118.893C977.348 110.689 973.715 99.1758 973.715 84.3516C973.715 70.3477 977.67 58.9512 985.58 50.1621C993.549 41.3145 1003.42 36.8906 1015.2 36.8906C1026.98 36.8906 1036.09 40.6992 1042.53 48.3164C1048.98 55.9336 1052.2 66.5098 1052.2 80.0449V87.6035ZM1037.44 75.3867C1037.38 67.0664 1035.36 60.5918 1031.37 55.9629C1027.45 51.334 1021.97 49.0195 1014.94 49.0195C1008.14 49.0195 1002.37 51.4512 997.621 56.3145C992.875 61.1777 989.945 67.5352 988.832 75.3867H1037.44Z" stroke="black" stroke-width="4" mask="url(#path-1-outside-1_6_2)"/>
+        </svg>
+      </div>
+
+      <nav class="header__menu" id="headerMenu">
+        <a class="conocenos" href="../../index.html">Conócenos</a>
+        <a class="venta" href="../../html/venta.html">Venta</a>
+        <a class="compra"  href="../../html/compra.html">Compra</a>
+        <a class="articulos"  href="../../html/blog.html">Blog</a>
+        <a class="contacto"  href="../../html/contacto.html">Contacto</a>
+      </nav>
+
+    </header>
+
+    <main class="main">
+
+      <section class="presentacion">
+        <div class="presentacion__imagen">
+          <img src="../../imgPropiedad/albert38/albert38_1.jpg" alt="Imagen fachada">
+        </div>
+        <div class="presentacion__degradado">
+          <div class="presentacion__degradado--info">
+              <div>
+                <h2>Descripción</h2>
+                <a href="javascript:history.back()">Atrás</a>
+              </div>
+              <p>
+                La colonia Albert se encuentra dentro de la Alcaldía Benito Juárez, se encuentra en la región
+                central de la Ciudad de México. Colinda al Norte con la Alcaldía Miguel Hidalgo, Cuauhtémoc y
+                al Poniente con Álvaro Obregón. La posición céntrica que tiene, la convierte en un cruce de
+                caminos entre las diversas zonas de la ciudad, por lo mismo cuenta con abundantes vías de comunicación,
+                así sus habitantes benefician de la gran facilidad de transportarse hacia cualquier parte. Albert
+                38 es un proyecto acogedor ubicado en una de las más pequeñas colonias de la Alcaldia Benito Juarez.
+                Desde hace varios años esta entre las preferidas para rentar casa y/o departamentos. Esta colonia es
+                una excelente zona al sur de la ciudad, entre calzada de Tlalpan y Plutarco Elias Calles, rodeada de
+                todo tipo de transporte y servicios ideales a pocos pasos para una vida de calidad. Creado para la
+                comodidad de sus habitantes con espacios modernos para gozar de sus amenidades, ademas de ser un
+                patrimonio con una plusvalía creciente y segura.
+              </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Solo se verá en vista de celular y iPad -->
+      <section class="carouselMobile">
+        <div id="carouselExampleIndicators" class="carousel slide main__carousel-imagen" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="../../imgPropiedad/albert38/albert38_2.jpg" class="d-block w-100" alt="Imagen propiedad">
+            </div>
+            <div class="carousel-item">
+              <img src="../../imgPropiedad/albert38/albert38_3.jpg" class="d-block w-100" alt="Imagen propiedad">
+            </div>
+            <div class="carousel-item">
+              <img src="../../imgPropiedad/albert38/albert38_4.jpg" class="d-block w-100" alt="Imagen propiedad">
+            </div>
+            <div class="carousel-item">
+              <img src="../../imgPropiedad/albert38/albert38_5.jpg" class="d-block w-100" alt="Imagen propiedad">
+            </div>
+            <div class="carousel-item">
+              <img src="../../imgPropiedad/albert38/albert38_6.jpg" class="d-block w-100" alt="Imagen propiedad">
+            </div>
+            <div class="carousel-item">
+              <img src="../../imgPropiedad/albert38/albert38_7.jpg" class="d-block w-100" alt="Imagen propiedad">
+            </div>
+            <div class="carousel-item">
+              <img src="../../imgPropiedad/albert38/albert38_8.jpg" class="d-block w-100" alt="Imagen propiedad">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="informacion">
+        <div class="informacion__info">
+          <div class="informacion__info-botonesTipo">
+            <button id="tipo4">Tipo 4 <i class="fa-solid fa-angle-right"></i></button><!--
+          --><button class="boton" id="tipo6">Tipo 6 <i class="fa-solid fa-angle-right"></i></button><!--
+          --><button id="tipo7">Tipo 7 <i class="fa-solid fa-angle-right"></i></button>
+          </div>
+          <div class="informacion__info-imagenTipo">
+            <img id="imagenTipo" src="../../imgPropiedad/albert38/albertTipo4.jpg" alt="Imagen de Planos">
+          </div>
+          <p class="ubicacionTexto">Ubicación</p>
+          <div class="informacion__info-ubicacion">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.9809610857355!2d-99.14059797096328!3d19.369977039971282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1fe4e943ae167%3A0xae9ad78e3c387403!2sAlbert%2038%2C%20Albert%2C%20Benito%20Ju%C3%A1rez%2C%2003560%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses!2smx!4v1648508070097!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <h2>¡Visítanos!</h2>
+          <p class="visitanosTexto">Agenda una cita con nosotros para visitar la propiedad. Solo ingresa tus datos en el siguiente formulario.</p>
+          <form action="" method="post">
+            <label for="desarrollo">Desarrollo</label>
+            <input type="text" name="desarrollo" value="Albert 38">
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" required>
+            <label for="correo">Correo</label>
+            <input type="email" name="correo" required>
+            <label for="telefono">Teléfono</label>
+            <input type="number" name="telefono">
+            <label for="fecha">Fecha</label>
+            <input type="date" name="fecha">
+            <label for="hora">Hora</label>
+            <input type="time" name="hora">
+            <p>
+              <input type="checkbox" name="politicaPrivacidad" id="politicaPrivacidad" required>
+              <a href="#" target="_blank">Acepto la política de privacidad <i class='fas fa-external-link-alt'></i></a>
+              <span>y</span>
+              <a href="#" target="_blank"> términos y condiciones <i class='fas fa-external-link-alt'></i></a>
+            </p>
+            <input type="hidden" name="numIdPropiedad" value="Albert 38">
+            <button type="submit">Enviar</button>
+          </form>
+        </div>
+        <div class="informacion__fotos">
+          <img src="../../imgPropiedad/albert38/albert38_2.jpg" alt="Fotos desarrollo">
+          <img src="../../imgPropiedad/albert38/albert38_3.jpg" alt="Fotos desarrollo">
+          <img src="../../imgPropiedad/albert38/albert38_4.jpg" alt="Fotos desarrollo">
+          <img src="../../imgPropiedad/albert38/albert38_5.jpg" alt="Fotos desarrollo">
+          <img src="../../imgPropiedad/albert38/albert38_6.jpg" alt="Fotos desarrollo">
+          <img src="../../imgPropiedad/albert38/albert38_7.jpg" alt="Fotos desarrollo">
+          <img src="../../imgPropiedad/albert38/albert38_8.jpg" alt="Fotos desarrollo">
+        </div>
+      </section>
+
+      <section class="contactosCorto">
+        <div class="contactos__direccionCorreoTelefono">
+          <a href="https://www.google.com.mx/maps/place/Blvd.+Adolfo+L%C3%B3pez+Mateos+172,+Merced+G%C3%B3mez,+Benito+Ju%C3%A1rez,+03930+Ciudad+de+M%C3%A9xico,+CDMX/@19.363686,-99.1925563,17z/data=!4m5!3m4!1s0x85d201c082b7d2b1:0xb657ac53ac818181!8m2!3d19.3634026!4d-99.1907753" target="_blank">Blvd. Adolfo López Mateos 172, Merced Gómez, Benito Juárez, 03930 Ciudad de México, CDMX. <i class='fas fa-external-link-alt'></i></a>
+          <a href="mailto:contacto@happyhousemx.com" target="_blank">contacto@happyhousemx.com <i class='fas fa-external-link-alt'></i></a>
+          <a href="tel:5638572294" target="_blank">56 3857 2294  <i class='fas fa-external-link-alt'></i></a>
+        </div>
+        <div class="contactos__redes">
+          <a href="https://m.facebook.com/HAPPY-HOUSE-103120935667789/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+          <a href="https://www.instagram.com/happyhousemx.oficial/?utm_medium=copy_link"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          <a href="#"><i class="fab fa-tiktok"></i></a>
+          <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <p><i class='far fa-copyright'></i> <span id="footerYear"></span> - Happy House - Todos los derechos reservados.</p>
+      </footer>
+
+    </main>
+
+    <script src="../../scripts/script.js"></script>
+    <script>
+      // Manejo de los botones que muestran el tipo de propiedad
+      var btnTipo4 = document.getElementById("tipo4");
+      var btnTipo6 = document.getElementById("tipo6");
+      var btnTipo7 = document.getElementById("tipo7");
+
+      var imgTipo = document.getElementById("imagenTipo");
+
+      btnTipo4.style.color = "#000";
+
+      // Cuando presiono el botón de Tipo 4
+      btnTipo4.addEventListener('click', () => {
+        imgTipo.style.display = "none";
+        btnTipo4.style.color = "#000";
+        btnTipo6.style.color = "#ffecb7";
+        btnTipo7.style.color = "#ffecb7";
+        setTimeout(() => {
+          imgTipo.style.display = "inline";
+          imgTipo.src = "../../imgPropiedad/albert38/albertTipo4.jpg";
+        }, 500);
+      });
+
+      // Cuando presiono el botón de Tipo 6 
+      btnTipo6.addEventListener('click', () => {
+        imgTipo.style.display = "none";
+        btnTipo4.style.color = "#ffecb7";
+        btnTipo6.style.color = "#000";
+        btnTipo7.style.color = "#ffecb7";
+        setTimeout(() => {
+          imgTipo.style.display = "inline";
+          imgTipo.src = "../../imgPropiedad/albert38/albertTipo6.jpg";
+        }, 500);
+      });
+
+      // Cuando presiono el botón de Tipo 7 
+      btnTipo7.addEventListener('click', () => {
+        imgTipo.style.display = "none";
+        btnTipo4.style.color = "#ffecb7";
+        btnTipo6.style.color = "#ffecb7";
+        btnTipo7.style.color = "#000";
+        setTimeout(() => {
+          imgTipo.style.display = "inline";
+          imgTipo.src = "../../imgPropiedad/albert38/albertTipo7.jpg";
+        }, 500);
+      });
+    </script>
+
+  </body>
+
+</html>

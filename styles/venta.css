@@ -1,0 +1,537 @@
+/* Mapa */
+/* #map {
+  width: 100%;
+  height: 500px;
+} */
+
+/* Variables de color */
+:root {
+  --decorado: #b58f26;
+  --decorado1: #a08a5a;
+  --decorado2: #ffecb7;
+  --decorado4: #907335;
+}
+
+/*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*
+  Mobile View 
+*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*/
+
+/*************************************************************************************
+  Meter información de ventas
+*************************************************************************************/
+.main__direction {
+  width: 100%;
+  height: 17rem;
+  position: relative;
+}
+
+/* Contenedor de información */
+.main__direction-info {
+  background: rgb(255,255,255);
+  background: linear-gradient(90deg, rgba(255,255,255,1) 50%, rgba(255,255,255,0.15) 80%);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.main__direction-info .main__direction-infoWrapper h1 {
+  margin-left: 1rem;
+}
+
+.main__direction-info .main__direction-infoWrapper p {
+  margin-left: 1rem;
+  font-size: 1rem;
+  width: 70%;
+}
+
+.main__direction-info .main__direction-infoWrapper h1 span {
+  color: var(--decorado);
+}
+
+/* .main__direction-info input {
+  display: block;
+  width: 90%;
+  margin: auto;
+} */
+
+/* Contenedor de imagen */
+.main__direction-img {
+  width: 65%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.main__direction-img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/*************************************************************************************
+  Instrucciones de cómo funciona
+*************************************************************************************/
+.main__function {
+  width: 100%;
+  margin: 3rem 0;
+}
+
+.main__function h2 {
+  text-align: center;
+  margin: 1rem 0 0;
+}
+
+.main__function-steps {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.main__function-steps span {
+  display: flex;
+  width: 2rem;
+  height: 2rem;
+  background-color: var(--decorado1);
+  color: var(--decorado2);
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+.main__function-steps p {
+  width: calc(100% - 2rem);
+  padding-left: 1rem;
+  color: #0007;
+}
+
+/* Sección del formulario, botones de anterior, siguiente y botón para que aparezca */
+/* Botón */
+.main__direction-info .main__direction-infoWrapper .main__direction-infoWrapperButtonAppearForm,
+.directionForm .directionForm__buttonsNextPrev .prevNextButtons {
+  background-color: var(--decorado);
+  display: block;
+  margin: 1rem auto;
+  cursor: pointer;
+  color: var(--decorado2);
+  border: 1px solid #000;
+  padding: 0.5rem 0.75rem;
+  border-radius: 9999px;
+}
+
+.directionForm .directionForm__buttonsNextPrev .prevNextButtons {
+  margin: 0.5rem 0;
+}
+
+.main__direction-info .main__direction-infoWrapper .main__direction-infoWrapperButtonAppearForm {
+  width: 16rem;
+  height: 3rem;
+  border-radius: 15px;
+  border: 0;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+
+.main__direction-info .main__direction-infoWrapper .main__direction-infoWrapperButtonAppearForm:hover,
+.directionForm .directionForm__buttonsNextPrev .prevNextButtons:hover {
+  background-color: var(--decorado2);
+  color: var(--decorado);
+}
+
+/* Formulario */
+.directionForm .directionForm__form {
+  width: 95%;
+  height: 0;
+  margin: 0 auto;
+  overflow: hidden;
+  transition: 1s;
+}
+
+.directionForm .directionForm__form.active5 {
+  height: 38rem;
+} 
+
+.directionForm .directionForm__form ul {
+  width: 600%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  transition: 0.75s;
+}
+
+.directionForm .directionForm__form ul li {
+  background-color: #d2ba87aa;
+  border: 2px solid #d2ba87;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  list-style: none;
+}
+
+/* Titulos de sección */
+.directionForm .directionForm__form ul li h2 {
+  text-align: center;
+  width: 90%;
+  margin: 1rem auto 0.25rem;
+}
+
+#instruccion {
+  font-size: 1.25rem;
+}
+
+/* Sección 1 del formulario */
+.directionForm .directionForm__form ul .seccionUno label {
+  display: block;
+  width: 85%;
+  margin: 1rem 1rem 0.2rem;
+}
+
+.directionForm .directionForm__form ul .seccionUno input {
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+  padding: 0.5rem 1rem;
+  outline: none;
+  border: 0;
+}
+
+/* Sección 2 del formulario */
+.directionForm .directionForm__form ul .seccionDos label {
+  display: block;
+  width: 75%;
+  margin: 0.5rem 1rem;
+}
+
+.directionForm .directionForm__form ul .seccionDos input {
+  display: block;
+  width: 75%;
+  margin: 0.5rem 1rem;
+  padding: 0.5rem 1rem;
+  outline: none;
+  border: 0;
+}
+
+.directionForm .directionForm__form ul .seccionDos select {
+  display: block;
+  margin-left: 1rem;
+  outline: none;
+}
+
+.directionForm .directionForm__form ul .seccionDos p {
+  width: 75%;
+  margin: 0.2rem 1rem;
+}
+
+.directionForm .directionForm__form ul .seccionDos div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.directionForm .directionForm__form ul .seccionDos .tipoEstacionamiento {
+  display: inline-block;
+}
+
+.directionForm .directionForm__form ul .seccionDos .opcion1 {
+  width: 9.5rem;
+}
+
+.directionForm .directionForm__form ul .seccionDos .opcion2 {
+  width: 6.5rem;
+}
+
+.directionForm .directionForm__form ul .seccionDos .tipoEstacionamiento input {
+  display: inline;
+  margin: 0;
+  padding: 0;
+  width: auto;
+}
+
+/* Sección 3 del formulario */
+.directionForm .directionForm__form ul .seccionTres p {
+  width: 85%;
+  margin: 0 1rem 0.5rem;
+}
+
+.directionForm .directionForm__form ul .seccionTres p input {
+  display: inline-block;
+  width: 50%;
+  outline: none;
+  padding: 0.3rem 0.5rem;
+}
+
+.directionForm .directionForm__form ul .seccionTres p .dineroDeseado {
+  width: 70%;
+}
+
+.directionForm .directionForm__form ul .seccionTres label {
+  display: block;
+  width: 85%;
+  margin: 0.75rem 1rem;
+}
+
+::placeholder {
+  font-size: 0.6rem;
+}
+
+/* Sección 4 del formulario */
+.directionForm .directionForm__form ul .seccionCuatro label {
+  display: block;
+  width: 75%;
+  margin: 0.5rem 1rem;
+}
+
+#primerLabelSeccion4 {
+  margin-top: 2rem;
+}
+
+.directionForm .directionForm__form ul .seccionCuatro input[type="number"] {
+  display: block;
+  margin: 0.5rem 1rem;
+  padding: 0.25rem 0.5rem;
+  outline: none;
+}
+
+.directionForm .directionForm__form ul .seccionCuatro p {
+  width: 75%;
+  margin: 1rem 1rem 0.25rem;
+}
+
+
+/* Sección 5 del formulario */
+.directionForm .directionForm__form ul .seccionCinco p {
+  width: 85%;
+  margin: 0.35rem 0 0 1rem;
+}
+
+.directionForm .directionForm__form ul .seccionCinco input[type="text"] {
+  width: 85%;
+  margin-left: 1rem;
+  outline: none;
+  padding-left: 1rem;
+}
+
+.directionForm .directionForm__form ul .seccionCinco input[type="text"]::placeholder {
+  font-size: 1rem;
+}
+
+.directionForm .directionForm__form ul .seccionCinco p input[type="text"] {
+  width: 50%;
+  outline: none;
+  padding-left: 1rem;
+}
+
+.directionForm .directionForm__form ul .seccionCinco label {
+  display: block;
+  width: 85%;
+  margin: 0.35rem 1rem;
+}
+
+.directionForm .directionForm__form ul .seccionCinco div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.directionForm .directionForm__form ul .seccionCinco div .redesConocer {
+  display: inline-block;
+  width: 40%;
+}
+
+/* Sección 6 del formulario */
+.directionForm .directionForm__form ul .seccionSeis label {
+  display: block;
+  width: 75%;
+  margin: 1rem 1rem 0.5rem;
+}
+
+.directionForm .directionForm__form ul .seccionSeis input {
+  display: block;
+  margin: 0.5rem 1rem;
+  padding: 0.5rem 1rem;
+  outline: none;
+  border: 0;
+}
+
+.directionForm .directionForm__form ul .seccionSeis input[type="checkbox"] {
+  display: inline;
+}
+
+.directionForm .directionForm__form ul .seccionSeis p {
+  width: 90%;
+  margin-left: 1rem;
+}
+
+.directionForm .directionForm__form ul .seccionSeis p a {
+  font-size: 0.875rem;
+  color: var(--decorado);
+  text-decoration: none;
+}
+
+.directionForm .directionForm__form ul .seccionSeis p a:hover {
+  color: #d2ba87;
+}
+
+/* Logo de link */
+.directionForm .directionForm__form ul .seccionSeis .fa-external-link-alt {
+  font-size: 0.5rem;
+}
+
+.directionForm .directionForm__form ul .seccionSeis button {
+  background-color: #d2ba87;
+  display: block;
+  margin: 2rem auto 0;
+  border: 2px solid #907335;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+.directionForm .directionForm__form ul .seccionSeis button:hover {
+  background-color: #907335;
+  border-color: #d2ba87;
+}
+
+/* Div de botones Anterior y Siguiente */
+.directionForm .directionForm__buttonsNextPrev {
+  justify-content: space-around;
+  width: 100%;
+  overflow: hidden;
+  display: none;
+}
+
+.directionForm .directionForm__buttonsNextPrev.active6 {
+  display: flex;
+}
+
+/*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*
+  Desktop View
+*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*/
+@media screen and (min-width: 1000px) {
+  /*************************************************************************************
+    Header
+  *************************************************************************************/
+  .main__direction {
+    height: 32.5rem;
+  }
+
+  .main__direction-info .main__direction-infoWrapper {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main__direction-info .main__direction-infoWrapper p {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+
+  /* Contenedor de información */
+  .main__direction-info {
+    background: linear-gradient(90deg, rgba(255,255,255,1) 65%, rgba(255,255,255,0.15) 85%);
+  }
+
+  .main__direction-img {
+    width: 40%;
+  }
+
+
+  /* Botón que aparece el formulario */
+  .main__direction-info .main__direction-infoWrapper .main__direction-infoWrapperButtonAppearForm {
+    width: 26rem;
+    height: 4rem;
+    font-size: 2.5rem;
+  }
+  /*************************************************************************************
+    Instrucciones de cómo funciona
+  *************************************************************************************/
+  .main__function{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .main__function h2 {
+    width: 100%;
+  }
+
+  .main__function-steps {
+    width: 25%;
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+
+  .main__function-steps p {
+    text-align: center;
+  }
+
+  /* Formulario */
+  .directionForm .directionForm__form {
+    width: 30rem;
+  }
+
+  /* Sección 1 del formulario */
+  .directionForm .directionForm__form ul .seccionUno label {
+    margin-left: 3rem;
+  }
+
+  /* Sección 2 del formulario */
+  .directionForm .directionForm__form ul .seccionDos label,
+  .directionForm .directionForm__form ul .seccionDos p {
+    margin-left: 3rem;
+  }
+
+  .directionForm .directionForm__form ul .seccionDos input[type="number"] {
+    width: 90%;
+    margin: 0.5rem auto;
+  }
+
+  .directionForm .directionForm__form ul .seccionDos select {
+    margin-left: 3rem;
+  }
+
+  /* Sección 3 del formulario */
+  ::placeholder {
+    font-size: 1rem;
+  }
+
+  /* Sección 5 del formulario */
+  .directionForm .directionForm__form ul .seccionCinco .tituloVistaPc {
+    margin-top: 1.5rem;
+  }
+
+  /* Sección 6 del formulario */
+  .directionForm .directionForm__form ul .seccionSeis label {
+    margin-left: 3rem;
+  }
+
+  .directionForm .directionForm__form ul .seccionSeis input {
+    width: 90%;
+    margin: 0.5rem auto;
+  }
+
+  .directionForm .directionForm__form ul .seccionSeis input[type="checkbox"] {
+    width: auto;
+  }
+
+  .directionForm .directionForm__form ul .seccionSeis p {
+    margin: 2rem auto;
+    text-align: center;
+  }
+
+  /* Div de botones Anterior y Siguiente */
+  .directionForm .directionForm__buttonsNextPrev {
+    width: 30rem;
+    margin: 0 auto;
+  }
+}

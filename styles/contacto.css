@@ -1,0 +1,288 @@
+/* Colores de logos */
+:root {
+  --facebookLogo: #3b5998;
+  --linkedinLogo: #0e76a8;
+  --whatsappLogo: #00bb2d;
+  --twitterLogo: #00acee;
+  --instagramLogo: #8a3ab9;
+  --tiktokLogo: #000;
+  --youtubeLogo: #c4302b;
+  --fbLogoHover: #25375f;
+  --liLogoHover: #0e5d81;
+  --waLogoHover: #187a2f;
+  --twLogoHover: #006b96;
+  --inLogoHover: #6f388f;
+  --ttLogoHover: #222;
+  --ytHover: #9e2b27;
+}
+
+/*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*
+  Mobile View 
+*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*/
+
+.info {
+  width: 100%;
+}
+
+/* Texto */
+.infoText {
+  margin: 0 0.5rem;
+  font-size: 1.5rem;
+}
+
+/* Imagen */
+.infoImg {
+  display: block;
+  width: 75%;
+  height: auto;
+  margin: auto;
+}
+
+/* Formulario */
+.info .infoWrapper .infoWrapper__form {
+  background-color: #d2ba87aa;
+  border: 2px solid #d2ba87;
+  border-radius: 10px;
+  width: 95%;
+  margin: 1rem auto;
+  padding: 1rem;
+}
+
+.info .infoWrapper .infoWrapper__form label {
+  display: block;
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.info .infoWrapper .infoWrapper__form input {
+  display: block;
+  margin: 1rem 0;
+  border: 0;
+  outline: none;
+  padding: 0.5rem 1rem;
+  width: 100%;
+}
+
+.info .infoWrapper .infoWrapper__form textarea {
+  display: block;
+  margin: 1rem 0;
+  border: 0;
+  outline: none;
+  padding: 1rem;
+  width: 100%;
+  resize: none;
+}
+
+.info .infoWrapper .infoWrapper__form button {
+  background-color: #d2ba87;
+  display: block;
+  margin: 0 auto;
+  border: 2px solid #907335;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+.info .infoWrapper .infoWrapper__form button:hover {
+  background-color: #907335;
+  border-color: #d2ba87;
+}
+
+
+/* Politica de privacidad y términos y condiciones */
+.info .infoWrapper .infoWrapper__form input[type="checkbox"] {
+  display: inline;
+  width: auto;
+}
+
+.info .infoWrapper .infoWrapper__form p {
+  margin-top: 1rem;
+}
+
+.info .infoWrapper .infoWrapper__form p a {
+  font-size: 0.875rem;
+  color: var(--decorado);
+}
+
+.info .infoWrapper .infoWrapper__form p a:hover {
+  color: #d2ba87;
+}
+
+/* Información y links */
+.info .infoWrapper .infoWrapper__info {
+  width: 100%;
+  padding: 1rem;
+}
+/* Logos de link */
+.info .infoWrapper .infoWrapper__info .fa-external-link-alt {
+  font-size: 0.75rem;
+}
+
+.info .infoWrapper .infoWrapper__form .fa-external-link-alt {
+  font-size: 0.5rem;
+}
+
+.info .infoWrapper .infoWrapper__info a {
+  display: block;
+  text-decoration: none;
+  color: #000;
+  margin: 1rem 0;
+}
+
+.info .infoWrapper .infoWrapper__info a:hover {
+  color: #d2ba87;
+}
+
+/* Redes */
+.info .infoWrapper .infoWrapper__info .infoWrapper__info-redes {
+  display: flex;
+  justify-content: space-around;
+}
+
+.info .infoWrapper .infoWrapper__info .infoWrapper__info-redes a {
+  background-color: #222;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 50%;
+  color: #fff;
+  position: relative;
+}
+
+.info .infoWrapper .infoWrapper__info .infoWrapper__info-redes a i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Colores de botones de redes */
+.info .infoWrapper .infoWrapper__info .infoWrapper__info-redes .facebook {
+  background-color: var(--facebookLogo);
+}
+
+.info .infoWrapper .infoWrapper__info .infoWrapper__info-redes .twitter {
+  background-color: var(--twitterLogo);
+}
+
+.info .infoWrapper .infoWrapper__info .infoWrapper__info-redes .linkedin {
+  background-color: var(--linkedinLogo);
+}
+
+.info .infoWrapper .infoWrapper__info .infoWrapper__info-redes .instagram {
+  background-color: var(--instagramLogo);
+}
+
+.info .infoWrapper .infoWrapper__info .infoWrapper__info-redes .tiktok {
+  background-color: var(--tiktokLogo);
+}
+
+.info .infoWrapper .infoWrapper__info .infoWrapper__info-redes .whatsapp {
+  background-color: var(--whatsappLogo);
+}
+
+.info .infoWrapper .infoWrapper__info .infoWrapper__info-redes .youtube {
+  background-color: var(--youtubeLogo);
+}
+
+/* Colores de botones de redes al hacer hover*/
+.info .infoWrapper .infoWrapper__info .infoWrapper__info-redes .facebook:hover {
+  background-color: var(--fbLogoHover);
+}
+
+.info .infoWrapper .infoWrapper__info .infoWrapper__info-redes .twitter:hover {
+  background-color: var(--twLogoHover);
+}
+
+.info .infoWrapper .infoWrapper__info .infoWrapper__info-redes .linkedin:hover {
+  background-color: var(--liLogoHover);
+}
+
+.info .infoWrapper .infoWrapper__info .infoWrapper__info-redes .instagram:hover {
+  background-color: var(--inLogoHover);
+}
+
+.info .infoWrapper .infoWrapper__info .infoWrapper__info-redes .tiktok:hover {
+  background-color: var(--ttLogoHover);
+}
+
+.info .infoWrapper .infoWrapper__info .infoWrapper__info-redes .whatsapp:hover {
+  background-color: var(--waLogoHover);
+}
+
+.info .infoWrapper .infoWrapper__info .infoWrapper__info-redes .youtube:hover {
+  background-color: var(--ytHover);
+}
+
+/* Mapa */
+.info .infoMap {
+  width: 95%;
+  height: 15rem;
+  margin: 2rem auto;
+  border: 2px solid #000;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.info .infoMap iframe {
+  width: 100%;
+  height: 100%;
+}
+
+/* Footer */
+.footer {
+  background-color: #000;
+  color: #d2ba87;
+}
+
+.footer p {
+  margin: 0;
+  padding: 1rem 0;
+}
+
+/*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*
+  Desktop View
+*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*/
+@media screen and (min-width: 1000px) {
+  /* Texto */
+  .infoText {
+    margin-left: 1rem;
+    font-size: 2rem;
+  }
+
+  /* Imagen */
+  .infoImg {
+    width: 20%;
+    height: auto;
+    margin: auto;
+  }
+
+  .textImg {
+    display: inline-block;
+  }
+
+  .info .infoWrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .info .infoWrapper .infoWrapper__form {
+    width: 37.5%;
+    margin: 2rem 0;
+  }
+
+  .info .infoWrapper .infoWrapper__info {
+    width: 40%;
+    margin: 0;
+  }
+
+  /* Mapa */
+  .info .infoMap {
+    height: 29rem;
+  }
+
+  /* Redes */
+  .info .infoWrapper .infoWrapper__info .infoWrapper__info-redes a {
+    width: 3rem;
+    height: 3rem;
+  }
+}

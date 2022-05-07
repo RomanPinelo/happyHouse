@@ -1,0 +1,402 @@
+/* Variables de color */
+:root {
+  --decorado: #b58f26;
+  --decorado2: #ffecb7;
+}
+
+/*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*
+  Mobile View 
+*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*/
+.presentacion {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.presentacion .presentacion__imagen img {
+  display: block;
+  width: 100%;
+}
+
+.presentacion .presentacion__degradado .presentacion__degradado--info {
+  margin-top: 1rem;
+}
+
+.presentacion .presentacion__degradado .presentacion__degradado--info p {
+  text-align: justify;
+  margin: 0;
+}
+
+.presentacion .presentacion__degradado .presentacion__degradado--info div {
+  display: flex;
+  justify-content: space-around;
+}
+
+.presentacion .presentacion__degradado .presentacion__degradado--info div h2 {
+  margin: 0;
+}
+
+.presentacion .presentacion__degradado .presentacion__degradado--info div a {
+  display: block;
+  height: 2rem;
+  width: 3.5rem;
+  text-align: center;
+  background-color: var(--decorado);
+  text-decoration: none;
+  color: var(--decorado2);
+  border-radius: 10px;
+}
+
+.presentacion .presentacion__degradado .presentacion__degradado--info div a:hover {
+  background-color: var(--decorado2);
+  color: var(--decorado);
+}
+
+
+/* Carrusel */
+.carouselMobile {
+  width: 95%;
+  height: 14rem;
+  margin: 1rem auto;
+}
+
+/* Este bloque acomoda el tamaño de la imagen del carrusel fijo */
+.main .carouselMobile .main__carousel-imagen {
+  width: 100%;
+  height: 100%;
+}
+
+.main .carouselMobile .main__carousel-imagen .carousel-inner {
+  width: 100%;
+  height: 100%;
+}
+
+.main .carouselMobile .main__carousel-imagen .carousel-inner .carousel-item {
+  width: 100%;
+  height: 100%;
+}
+
+.main .carouselMobile .main__carousel-imagen .carousel-inner .carousel-item img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* Hasta aqui termina dicho bloque */
+
+/* Información del desarrollo */
+.main .informacion .informacion__info {
+  width: 95%;
+  margin: 0 auto;
+}
+
+/* Botones de Tipo */
+.main .informacion .informacion__info .informacion__info-botonesTipo button {
+  display: inline-block;
+  width: 33.33%;
+  height: 2.5rem;
+  outline: none;
+  border: 0;
+  background-color: var(--decorado);
+  color: var(--decorado2);
+  position: relative;
+}
+
+.main .informacion .informacion__info .informacion__info-botonesTipo .boton {
+  border-left: 1px;
+  border-right: 1px;
+  border-color: #000;
+  border-style: solid;
+}
+
+.main .informacion .informacion__info .informacion__info-botonesTipo .topBottom {
+  border-top: 1px;
+  border-bottom: 1px;
+  border-color: #000;
+  border-style: solid;
+}
+
+/* Imagenes de tipo */
+.main .informacion .informacion__info .informacion__info-imagenTipo {
+  width: 100%;
+  height: 12.25rem;
+}
+
+.main .informacion .informacion__info .informacion__info-imagenTipo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* En celular no se veras estas fotos */
+.main .informacion .informacion__fotos {
+  display: none;
+}
+
+/* Div del mapa de la ubicación */
+.main .informacion .informacion__info .ubicacionTexto {
+  margin: 1rem 0 0;
+  padding-left: 3rem;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.main .informacion .informacion__info .informacion__info-ubicacion {
+  width: 100%;
+  height: 15rem;
+  border: 2px solid #000;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.main .informacion .informacion__info .informacion__info-ubicacion iframe {
+  width: 100%;
+  height: 100%;
+}
+
+/* Formulario */
+.main .informacion .informacion__info h2 {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.main .informacion .informacion__info .visitanosTexto {
+  text-align: justify;
+}
+
+.main .informacion .informacion__info form {
+  background-color: #d2ba87aa;
+  border: 2px solid #d2ba87;
+  border-radius: 10px;
+}
+
+.main .informacion .informacion__info form label {
+  display: block;
+  margin: 0.5rem 2.75rem;
+}
+
+.main .informacion .informacion__info form input {
+  display: block;
+  border: 0;
+  outline: none;
+  padding: 0.5rem 1rem;
+  margin: 0 0 0 1.5rem;
+}
+
+.main .informacion .informacion__info form input[type="text"],
+.main .informacion .informacion__info form input[type="email"],
+.main .informacion .informacion__info form input[type="number"] {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.main .informacion .informacion__info form input[type="checkbox"] {
+  display: inline;
+  margin-left: 0;
+}
+
+.main .informacion .informacion__info form p {
+  text-align: center;
+  width: 95%;
+  margin: 1rem auto 0;
+}
+
+.main .informacion .informacion__info form p a {
+  font-size: 1.15rem;
+  color: var(--decorado);
+}
+
+.main .informacion .informacion__info form p a i {
+  font-size: 0.6rem;
+}
+
+.main .informacion .informacion__info form button {
+  display: block;
+  background-color: var(--decorado);
+  color: var(--decorado2);
+  padding: 0.5rem 1rem;
+  margin: 2rem auto 1.25rem;
+  border: 0;
+  border-radius: 10px;
+}
+
+.main .informacion .informacion__info form button:hover {
+  background-color: #0002;
+  color: var(--decorado);
+}
+
+/* Sección de contactos más corto */
+.main .contactosCorto {
+  background-color: #000000d0;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.main .contactosCorto .contactos__direccionCorreoTelefono a {
+  display: block;
+  color: var(--decorado);
+  margin: 0;
+  padding: 0.75rem;
+  text-decoration: none;
+  text-align: justify;
+  font-size: 1rem;
+}
+
+.main .contactosCorto .contactos__direccionCorreoTelefono a:hover {
+  color: var(--decorado2);
+}
+
+.main .contactosCorto .contactos__direccionCorreoTelefono a i {
+  font-size: 0.75rem;
+}
+
+/* Redes */
+.main .contactosCorto .contactos__redes {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+}
+
+.main .contactosCorto .contactos__redes a {
+  display: block;
+  color: var(--decorado);
+  padding-bottom: 1rem;
+}
+
+.main .contactosCorto .contactos__redes a:hover {
+  color: var(--decorado2);
+}
+
+/* Footer */
+.main .footer p {
+  margin: 1rem 0;
+}
+
+/*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*
+  Desktop View
+*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*/
+@media screen and (min-width: 1000px) {
+  .presentacion {
+    width: 97.5%;
+    height: 30rem;
+    position: relative;
+    margin-top: 1rem;
+  }
+
+  .presentacion .presentacion__imagen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+  }
+
+  .presentacion .presentacion__imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .presentacion .presentacion__degradado {
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,0.15) 20%, rgba(255,255,255,1) 55%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  .presentacion .presentacion__degradado .presentacion__degradado--info {
+    width: 50%;
+    height: 100%;
+    margin: 0 0 0 50%;
+  }
+
+  .presentacion .presentacion__degradado .presentacion__degradado--info p {
+    width: 97.5%;
+    font-size: 1.22rem;
+  }
+
+  .carouselMobile {
+    display: none;
+  }
+
+  /* Estilos de la información y fotos. (Fotos en PC) */
+  .main .informacion {
+    width: 97.5%;
+    margin: 1rem auto;
+    display: flex;
+  }
+
+  /* Información del desarrollo */
+  .main .informacion .informacion__info {
+    width: 66.66%;
+    margin: 0;
+  }
+
+  /* Imagenes de tipo */
+  .main .informacion .informacion__info .informacion__info-imagenTipo {
+    height: 31.5rem;
+  }
+
+  .main .informacion .informacion__info .informacion__info-botonesTipo button:hover::before {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: var(--decorado2);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  /* En celular no se veran estas fotos */
+  .main .informacion .informacion__fotos {
+    display: block;
+    width: 33.33%;
+  }
+
+  .main .informacion .informacion__fotos img {
+    display: block;
+    width: 95%;
+    margin: 0.5rem auto;
+  }
+
+  /* Div del mapa de la ubicación */
+  .main .informacion .informacion__info .ubicacionTexto {
+    font-size: 2rem;
+  }
+
+  .main .informacion .informacion__info .informacion__info-ubicacion {
+    width: 95%;
+    height: 30rem;
+    margin: 0 auto;
+  }
+
+  /* Formulario */
+  .main .informacion .informacion__info form {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  /* Sección de contactos más cortos */
+  .main .contactosCorto .contactos__direccionCorreoTelefono {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .main .contactosCorto .contactos__direccionCorreoTelefono a {
+    font-size: 1.25rem;
+  }
+
+  /* Redes */
+  .main .contactosCorto .contactos__redes {
+    margin: 0;
+  }
+
+  /* Footer */
+  .main .footer p {
+    margin: 0.5rem 0;
+  }
+}

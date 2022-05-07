@@ -1,0 +1,534 @@
+/* Variables de color */
+:root {
+  --decorado: #b58f26;
+  --decorado1: #a08a5a;
+  --decorado2: #ffecb7;
+  --decorado4: #907335;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Calibri, sans-serif;
+  font-size: 1.25rem;
+  position: relative;
+}
+
+/*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*
+  Mobile View 
+*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*/
+
+/*************************************************************************************
+  Nav bar
+*************************************************************************************/
+/* Barra de menú */
+.header {
+  background-color: #fff;
+  width: 100%;
+  height: 5rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  /* transition: top 0.5s; */
+}
+
+/* Menú */
+.header__menu {
+  background-color: #fff;
+  position: absolute;
+  width: 70vw;
+  height: 0;
+  top: 1rem;
+  left: 20%;
+  border-radius: 20px;
+  z-index: 10;
+  transition: 0.4s;
+  overflow: hidden;
+}
+
+.header__menu.active {
+  height: 35vh;
+  border: 1px solid var(--decorado);
+}
+
+.header__menu a {
+  display: block;
+  width: 100%;
+  height: 7vh;
+  padding-left: 0.5rem;
+  text-decoration: none;
+  color: #000;
+  /* vertical-align: middle; */
+  line-height: 7vh;
+  border: 1px solid var(--decorado);
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+}
+
+.header__menu p {
+  width: 100%;
+  height: 7vh;
+  margin: 0;
+  padding-left: 0.5rem;
+  vertical-align: middle;
+  line-height: 7vh;
+  color: var(--decorado);
+  border: 1px solid var(--decorado);
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+}
+
+/* Logo */
+.header__logo {
+  width: 15rem;
+  height: 3rem;
+  position: absolute;
+  top: 50%;
+  right: 2.5%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+}
+
+.header__logo img {
+  display: block;
+  width: 4rem;
+  height: 2.6rem;
+  object-fit: contain;
+  align-self: flex-start;
+}
+
+.header__logo svg {
+  align-self: flex-end;
+}
+
+/* Animación del Happy House */
+#happyHouse {
+  width: 11rem;
+  height: 2rem;
+  animation: fill-letter 3.25s forwards 1;
+}
+
+#happyHouse path:nth-child(1) {
+  stroke-dasharray: 667;
+  stroke-dashoffset: 667;
+  animation: letter-anim 3.25s forwards 1;
+}
+#happyHouse path:nth-child(2) {
+  stroke-dasharray: 532;
+  stroke-dashoffset: 532;
+  animation: letter-anim1 3.25s forwards 1;
+}
+#happyHouse path:nth-child(3) {
+  stroke-dasharray: 640;
+  stroke-dashoffset: 640;
+  animation: letter-anim2 3.25s forwards 1;
+}
+#happyHouse path:nth-child(4) {
+  stroke-dasharray: 640;
+  stroke-dashoffset: 640;
+  animation: letter-anim3 3.25s forwards 1;
+}
+#happyHouse path:nth-child(5) {
+  stroke-dasharray: 518;
+  stroke-dashoffset: 518;
+  animation: letter-anim4 3.25s forwards 1;
+}
+#happyHouse path:nth-child(6) {
+  stroke-dasharray: 667;
+  stroke-dashoffset: 667;
+  animation: letter-anim5 3.25s forwards 1;
+}
+#happyHouse path:nth-child(7) {
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+  animation: letter-anim6 3.25s forwards 1;
+}
+#happyHouse path:nth-child(8) {
+  stroke-dasharray: 479;
+  stroke-dashoffset: 479;
+  animation: letter-anim7 3.25s forwards 1;
+}
+#happyHouse path:nth-child(9) {
+  stroke-dasharray: 411;
+  stroke-dashoffset: 411;
+  animation: letter-anim8 3.25s forwards 1;
+}
+#happyHouse path:nth-child(10) {
+  stroke-dasharray: 531;
+  stroke-dashoffset: 531;
+  animation: letter-anim9 3.25s forwards 1;
+}
+
+@keyframes letter-anim {
+  from{stroke-dashoffset: 667;}
+  to{stroke-dashoffset: 0;}
+}
+
+@keyframes letter-anim1 {
+  0%{stroke-dashoffset: 532;}
+  7.5%{stroke-dashoffset: 532;}
+  100%{stroke-dashoffset: 0;}
+}
+
+@keyframes letter-anim2 {
+  0%{stroke-dashoffset: 639;}
+  15%{stroke-dashoffset: 639;}
+  100%{stroke-dashoffset: 0;}
+}
+
+@keyframes letter-anim3 {
+  0%{stroke-dashoffset: 639;}
+  22.5%{stroke-dashoffset: 639;}
+  100%{stroke-dashoffset: 0;}
+}
+
+@keyframes letter-anim4 {
+  0%{stroke-dashoffset: 518;}
+  30%{stroke-dashoffset: 518;}
+  100%{stroke-dashoffset: 0;}
+}
+
+@keyframes letter-anim5 {
+  0%{stroke-dashoffset: 667;}
+  37.5%{stroke-dashoffset: 667;}
+  100%{stroke-dashoffset: 0;}
+}
+
+@keyframes letter-anim6 {
+  0%{stroke-dashoffset: 500;}
+  45%{stroke-dashoffset: 500;}
+  100%{stroke-dashoffset: 0;}
+}
+
+@keyframes letter-anim7 {
+  0%{stroke-dashoffset: 479;}
+  52.5%{stroke-dashoffset: 479;}
+  100%{stroke-dashoffset: 0;}
+}
+
+@keyframes letter-anim8 {
+  0%{stroke-dashoffset: 411;}
+  60%{stroke-dashoffset: 411;}
+  100%{stroke-dashoffset: 0;}
+}
+
+@keyframes letter-anim9 {
+  0%{stroke-dashoffset: 531;}
+  67.5%{stroke-dashoffset: 531;}
+  100%{stroke-dashoffset: 0;}
+}
+
+@keyframes fill-letter {
+  0%{fill: transparent;}
+  75%{fill: transparent;}
+  100%{fill: #000;}
+}
+
+/* Botón 8 Flecha */
+.button {
+  background-color: #fff;
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+  position: relative;
+  top: 50%;
+  left: 2.5%;
+  transform: translateY(-50%);
+}
+
+.button_bar {
+  position: absolute;
+  background-color: var(--decorado);
+  width: 80%;
+  height: 10%;
+  left: 10%;
+  border-radius: 9999px;
+  transition: 0.5s;
+}
+
+.Bar1 {
+  top: 17.5%;
+}
+
+.Bar2 {
+  top: 45%;
+}
+
+.Bar3 {
+  top: 72.5%;
+}
+
+.Bar1.active1 {
+  top: 30%;
+  left: 45%;
+  width: 50%;
+  transform: rotate(45deg);
+}
+
+.Bar3.active3 {
+  top: 60%;
+  left: 45%;
+  width: 50%;
+  transform: rotate(-45deg);
+}
+
+/*************************************************************************************
+  Contenido principal
+*************************************************************************************/
+.main {
+  position: absolute;
+  top: 5rem;
+  width: 100%;
+}
+
+/*************************************************************************************
+  Contactos
+*************************************************************************************/
+.contactos {
+  background-color: #000000d0;
+  color: var(--decorado);
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-size: 14px;
+}
+
+/* Logos de link */
+.contactos .fa-external-link-alt {
+  font-size: 0.5rem;
+}
+
+/* Dirección, correo, telefóno, redes sociales y contacto */
+.contactos__info {
+  width: 45%;
+}
+
+.contactos__info p, .contactos__info a {
+  margin: 1rem 0;
+  display: block;
+  text-align: justify;
+}
+
+.contactos__info a {
+  text-decoration: none;
+  color: var(--decorado);
+}
+
+.contactos__info a:hover {
+  color: var(--decorado2);
+}
+
+.contactos__info .contactos__info-mail {
+  font-size: 11px;
+}
+
+.contactos__info .contactosRedes {
+  display: flex;
+  justify-content: space-around;
+}
+
+.contactos__info .contactosRedes a {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  position: relative;
+}
+
+.contactos__info .contactosRedes a i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Borde inferior de titulo encuéntranos y empresa */
+.contactos__info .contactos__infoTitulo {
+  padding: 1rem 0;
+  border: 0;
+  border-bottom: 3px;
+  border-style: solid;
+  border-color: var(--decorado2);
+  color: var(--decorado2);
+}
+
+/* Links cosas legales */
+.contactos__legal {
+  width: 95%;
+  border: 0;
+  border-top: 1px;
+  border-style: solid;
+  border-color: var(--decorado2);
+}
+
+.contactos__legal a {
+  display: block;
+  margin: 0.1rem 0;
+  padding: 0.25rem 0;
+  text-decoration: none;
+  color: var(--decorado);
+}
+
+.contactos__legal a:hover {
+  color: var(--decorado2);
+}
+
+/* Footer */
+.footer {
+  width: 100%;
+}
+
+.footer p {
+  font-size: 12px;
+  text-align: center;
+}
+
+
+/*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*
+  Desktop View
+*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*/
+
+/*************************************************************************************
+  Nav bar
+*************************************************************************************/
+@media screen and (min-width: 1000px) {
+  /* Botón 8 Flecha */
+  .button {
+    display: none;
+  }
+
+  /* Barra de menú */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3rem;
+  }
+
+  /* Logo */
+  .header__logo {
+    position: static;
+    width: 15rem;
+    height: 3rem;
+    margin-left: 7%;
+    transform: translate(0);
+    justify-content: space-evenly;
+  }
+
+  .header__logo img {
+    width: 2.5rem;
+    height: 2.6rem;
+    object-fit: cover;
+  }
+
+  /* Animación del Happy House */
+  #happyHouse {
+    width: 11rem;
+    height: 2rem;
+    animation: fill-letter 3.25s forwards 1;
+  }
+
+  /* Menú */
+  .header__menu {
+    background-color: transparent;
+    position: static;
+    width: 47.5%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .header__menu a {
+    height: 2rem;
+    border-top: 0;
+    border-bottom: 0;
+    line-height: 2rem;
+    text-align: center;
+    padding: 0;
+  }
+
+  .header__menu a:hover {
+    border-bottom: 3px;
+    border-style: solid;
+    border-color: var(--decorado);
+  }
+
+  .header__menu p {
+    height: 2rem;
+    line-height: 2rem;
+    border-bottom: 3px solid var(--decorado);
+    text-align: center;
+    padding: 0;
+    border-top: 0;
+  }
+
+  .header__menu .conocenos {
+    width: 6rem;
+  }
+
+  .header__menu .venta {
+    width: 3.5rem;
+  }
+
+  .header__menu .compra {
+    width: 4.5rem;
+  }
+
+  .header__menu .articulos {
+    width: 3rem;
+  }
+
+  .header__menu .contacto {
+    width: 5.5rem;
+  }
+
+  .header__menu.active {
+    height: 100%;
+  }
+
+  /*************************************************************************************
+    Contenido principal
+  *************************************************************************************/
+  .main {
+    top: 3rem;
+  }
+
+  /*************************************************************************************
+    Contactos
+  *************************************************************************************/
+  /* Contactos */
+  .contactos .contactos__info {
+    width: 35%;
+  }
+
+  .contactos .contactos__info .contactos__infoTitulo {
+    font-size: 1.5rem;
+  }
+
+  .contactos .contactos__info a {
+    font-size: 1.25rem;
+  }
+
+  .contactos .contactos__legal {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .contactos .contactos__legal a {
+    font-size: 1.25rem;
+    margin: 0.5rem 0;
+  }
+
+  /* Footer */
+  .footer p {
+    font-size: 1rem;
+  }
+}
